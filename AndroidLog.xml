@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="AndroidLog">
-  <template name="logd" value="Log.d(TAG, &quot;$METHOD_NAME$ $content$&quot;);" description="Log.d(TAG, String)" toReformat="true" toShortenFQNames="true">
+  <template name="logd" value="Log.d(LOG_TAG, &quot;$METHOD_NAME$ $content$&quot;);" description="Log.d(LOG_TAG, String)" toReformat="true" toShortenFQNames="true">
     <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
     <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -23,7 +23,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="loge" value="Log.e(TAG, &quot;$METHOD_NAME$ $content$&quot;);" description="Log.e(TAG, String)" toReformat="true" toShortenFQNames="true">
+  <template name="loge" value="Log.e(LOG_TAG, &quot;$METHOD_NAME$ $content$&quot;);" description="Log.e(TAG, String)" toReformat="true" toShortenFQNames="true">
     <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
     <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -46,7 +46,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="logi" value="Log.i(TAG, &quot;$METHOD_NAME$ $content$&quot;);" description="Log.i(TAG, String)" toReformat="true" toShortenFQNames="true">
+  <template name="logi" value="Log.i(LOG_TAG, &quot;$METHOD_NAME$ $content$&quot;);" description="Log.i(TAG, String)" toReformat="true" toShortenFQNames="true">
     <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
     <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
